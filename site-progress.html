@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Notification</title>
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.4.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.4.js"></script>
+
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="Scripts/ifca/IFCAUIComponents.js"></script>
+    <script src="core/SiteProgress.js"></script>
+    <script src="ui/SiteProgressUI.js"></script>
+
+    <link rel="stylesheet" href="css/marketplace.css" />
+
+</head>
+<body>
+    <div id="siteProgress" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <a id="12" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-b ui-btn-inline" data-direction="reverse" data-rel="back">Power Icon</a>
+            <h1>Site Progress</h1>
+
+        </div>
+
+        <ul data-role="listview" data-inset="true" class="ui-alt-icon" id="siteProgressListView">
+            <!--<li>
+                <a href="site_progress_list.html">
+                    Mama Condo (A-3-1)<br />
+                    <form class="full-width-slider">
+                        <label for="slider-12" class="ui-hidden-accessible">Slider:</label>
+                        <input type="range" name="slider-12" id="slider-12" min="0" max="100" value="40" data-show-value="true" disabled="disabled" data-highlight="true">
+                    </form>
+                </a>
+            </li>
+
+            <li>
+                <a href="site_progress_list.html">
+                    Kaka Condo (A-12-3)<br />
+                    <form class="full-width-slider">
+                        <label for="slider-12" class="ui-hidden-accessible">Slider:</label>
+                        <input type="range" name="slider-12" id="Range1" min="0" max="100" value="80" data-show-value="true" disabled="disabled" data-highlight="true">
+                    </form>
+                </a>
+            </li>
+
+            <li>
+                <a href="site_progress_list.html">
+                    Wawa Condo (A-11-1)<br />
+                    <form class="full-width-slider">
+                        <label for="slider-12" class="ui-hidden-accessible">Slider:</label>
+                        <input type="range" name="slider-12" id="Range2" min="0" max="100" value="15" data-show-value="true" disabled="disabled" data-highlight="true">
+                    </form>
+                </a>
+            </li>
+
+            <li>
+                <a href="site_progress_list.html">
+                    Haha Condo (A-15-2)<br />
+                    <form class="full-width-slider">
+                        <label for="slider-12" class="ui-hidden-accessible">Slider:</label>
+                        <input type="range" name="slider-12" id="Range3" min="0" max="100" value="30" data-show-value="true" disabled="disabled" data-highlight="true">
+                    </form>
+                </a>
+            </li>-->
+
+        </ul>
+    </div>
+
+    <div id="progressList" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <a id="12" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext ui-btn-b ui-btn-inline" data-direction="reverse" data-rel="back">Power Icon</a>
+            <h1 style="white-space: normal">Mama Condo<br />(A-3-1)</h1>
+            
+        </div>
+
+        <ul data-role="listview" data-inset="true" id="progressListView">
+            <!--<li>
+                <a href="progress_detail.html">
+                    <img src="images/images.jpg">
+                    <h2 style="white-space: normal">Foundation & Footing</h2>
+                    <p>12/3/2010</p>
+                </a>
+            <li>
+                <a href="progress_detail.html">
+                    <img src="images/images.jpg">
+                    <h2 style="white-space: normal">Reinforced Concrete Framework</h2>
+                    <p>4/5/2011</p>
+                </a>
+
+            </li>
+            <li>
+                <a href="progress_detail.html">
+                    <img src="images/images.jpg">
+                    <h2 style="white-space: normal">Walls, Door & Window Frames</h2>
+                    <p>21/7/2012</p>
+                </a>
+
+            </li>-->
+        </ul>
+
+    </div>
+
+    <div id="progressDetail" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <a id="12" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext ui-btn-b ui-btn-inline" data-direction="reverse" data-rel="back">Power Icon</a>
+            <h1 style="white-space: normal">Progress Detail</h1>
+            
+        </div>
+
+        <a href="#popupPhotoLandscape" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
+            <img src="images/image.png" style="width:100%">
+            <h4>Fondation & Footing Works</h4>
+            <p>12/3/2010</p>
+        </a>
+            
+
+        <div data-role="popup" id="popupPhotoLandscape" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/image.png" alt="Photo landscape">
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

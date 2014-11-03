@@ -1,0 +1,63 @@
+﻿/// <reference path="../scripts/typings/jquery/jquery.d.ts" />
+/// <reference path="../scripts/typings/jquerymobile/jquerymobile.d.ts" />
+/// <reference path="../core/siteprogress.ts" />
+var Marketplace;
+(function (Marketplace) {
+    var SiteProgressUI = (function () {
+        function SiteProgressUI() {
+            this.items = [];
+        }
+        SiteProgressUI.prototype.AddItems = function (item) {
+            this.items.push(item);
+        };
+
+        SiteProgressUI.prototype.GenerateSiteProgressListView = function () {
+            var listString = "";
+
+            $.each(this.items, function (index, value) {
+                listString += "<li id='" + value.SiteProgressID + "'><a href='#progressList'>" + value.PhaseName + " (" + value.UnitTypeCode + ")<br/><form class='full-width-slider'><label class='ui-hidden-accessible'>Slider:</label><input type='range' name='slider-12' id='slider-12' min='0' max='100' value='" + value.CompletionLevel + "' data-show-value= 'true' disabled='disabled' data-highlight='true'></form></a></li>";
+            });
+            return listString;
+        };
+
+        SiteProgressUI.prototype.GenerateProgressListView = function (id) {
+            var listString = "";
+
+            $.each(this.items, function (index, value) {
+                if (id == value.SiteProgressID) {
+                    $.each(value.Progress, function (progressIndex, progressValue) {
+                        listString += "<li id=><a href='#progressDetail'><img src='" + progressValue.ProgressPicture + "'><h2 style='white-space:normal' >" + progressValue.SiteProgressFileName + "</h2><p>" + progressValue.CertificationDate + "</p></a></li>";
+                    });
+                    return false;
+                }
+            });
+            return listString;
+        };
+        return SiteProgressUI;
+    })();
+    Marketplace.SiteProgressUI = SiteProgressUI;
+})(Marketplace || (Marketplace = {}));
+
+$(document).one('pagebeforecreate', '#siteProgress', function () {
+    var SiteProgress = new Marketplace.SiteProgress();
+
+    var SiteProgressList = SiteProgress.GetSiteProgressList();
+
+    var SiteProgressUI = new Marketplace.SiteProgressUI();
+
+    $.each(SiteProgressList, function (index, value) {
+        SiteProgressUI.AddItems(value);
+    });
+
+    $("#siteProgressListView").html(SiteProgressUI.GenerateSiteProgressListView());
+
+    $('#siteProgressListView').delegate('li', 'tap', function () {
+        $("#progressListView").html(SiteProgressUI.GenerateProgressListView($(this).attr('id')));
+        $("#progressListView").listview("refresh");
+    });
+
+    $('#siteProgressListView').delegate('li', 'tap', function () {
+        $("#progressListView").html(SiteProgressUI.GenerateProgressListView($(this).attr('id')));
+        $("#progressListView").listview("refresh");
+    });
+});

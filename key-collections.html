@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />.
+    <title>Dedect & Repair</title>
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.4.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.4.js"></script>
+
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="Scripts/ifca/IFCAUIComponents.js"></script>
+    <script src="core/KeyCollections.js"></script>
+    <script src="ui/KeyCollectionsUI.js"></script>
+
+    <link rel="stylesheet" href="css/marketplace.css" />
+
+</head>
+<body>
+    <div id="keyCollections" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <a id="A13" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-b ui-btn-inline" data-direction="reverse" data-rel="back">Power Icon</a>
+            <h1>Key Collections</h1>
+
+        </div>
+
+        <ul data-role="listview" data-inset="true" class="ui-alt-icon" id="keyCollectionListView">
+            <!--<li>
+                <a href="key_collection_select_date.html">
+                    Mama Condo (A-3-1)
+                </a>
+                <span class="ui-li-count"><img style="width:1.5em" src="images/key.png"></span>
+            </li>
+            <li>
+                <a href="key_collection_select_date.html">
+                    Kaka Condo (C-12-3)
+                </a>
+                <span class="ui-li-count"></span>
+            </li>
+            <li>
+                <a href="key_collection_select_date.html">
+                    Wawa Condo (A-11-1)
+                </a>
+                <span class="ui-li-count"><img style="width:1.5em" src="images/key.png"></span>
+            </li>
+            <li>
+                <a href="key_collection_select_date.html">
+                    Haha Condo (B-15-2)
+                </a>
+                <span class="ui-li-count"></span>
+            </li>-->
+
+        </ul>
+    </div>
+
+    <div id="keyCollectionSelectDate" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <a id="A13" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext ui-btn-b ui-btn-inline" data-direction="reverse" data-rel="back">Power Icon</a>
+            <h1 id="keyCollectionSelectDate_Headers">
+                Mama Condo<br />
+                (A-3-1)
+            </h1>
+        </div>
+        <div data-role="content" data-theme="a">
+            <h2>PIC: Jenny Wong</h2>
+
+            <form>
+                <fieldset data-role="controlgroup">
+                    <legend>Please select your desired date:</legend>
+                    <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="on" checked="checked">
+                    <label for="radio-choice-v-2a">1) 5/8/2014</label>
+                    <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="off">
+                    <label for="radio-choice-v-2b">2) 16/8/2014</label>
+                    <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2c" value="other">
+                    <label for="radio-choice-v-2c">3) 17/8/2014</label>
+                    <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2d" value="other">
+                    <label for="radio-choice-v-2d">4) 18/8/2014</label>
+                </fieldset>
+            </form>
+
+            <a href="#popupDialogActivate" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn">Confirm</a>
+
+            <div data-role="popup" id="popupDialogActivate" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width: 400px;">
+                <div data-role="header" data-theme="a">
+                    <h1>Message</h1>
+                </div>
+                <div role="main" class="ui-content center">
+                    <h3 class="ui-title">The date have been updated</h3>
+
+                    <a href="#" class="ui-btn" data-rel="back" data-transition="flow">OK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

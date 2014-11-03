@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <meta charset="utf-8" />.
+    <title>Dedect & Repair</title>
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.4.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.4.js"></script>
+
+     <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="Scripts/ifca/IFCAUIComponents.js"></script>
+    <script src="core/DefectsRepair.js"></script>
+    <script src="ui/DefectsRepairUI.js"></script>
+
+    <link rel="stylesheet" href="css/marketplace.css"/>
+
+</head>
+<body>
+    <div id="defectRepair" data-role="page">
+        <div data-role="header" data-position="fixed">
+           <a id="A13" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-b ui-btn-inline" data-direction="reverse" data-rel="back">Power Icon</a>
+            <h1>Defect & Repair</h1>
+
+        </div>
+
+            <ul data-role="listview" data-inset="true" class="ui-alt-icon" id="defectPurchase_ListView">
+               <!-- <li>
+                    <a href="defect_repair_list.html">
+                        Dua Sentral (A-10-20)
+                    </a>
+                </li>
+                 <li>
+                    <a href="defect_repair_list.html">
+                       Kana Residence (B-10-20)
+                    </a>
+                </li>
+                 <li>
+                    <a href="defect_repair_list.html">
+                        Skypark Condo (A-3-1)
+                    </a>
+                </li>
+                 <li>
+                    <a href="defect_repair_list.html">
+                        East Lake Condo (B-11-1)
+                    </a>
+                </li>-->
+
+            </ul>
+
+    </div>
+
+
+    <div id="defectRepair_PurchaseUnit" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <a id="A1" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext ui-btn-b ui-btn-inline" data-direction="reverse"  data-rel="back">Power Icon</a>
+            <h1 id="defectRepair_PurchaseUnit_Headers">- - -</h1>
+            <a id="newDefect_Click" href="#newDefect" class="ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-notext ui-btn-b ui-btn-inline" data-direction="reverse">Power Icon</a>
+        </div>
+
+            <ul data-role="listview" data-inset="true" class="ui-alt-icon" id="defect_ListView">
+               <!-- <li>
+                    <a href="defect_repair_list.html">
+                        Dua Sentral (A-10-20)
+                    </a>
+                </li>
+                 <li>
+                    <a href="defect_repair_list.html">
+                       Kana Residence (B-10-20)
+                    </a>
+                </li>
+                 <li>
+                    <a href="defect_repair_list.html">
+                        Skypark Condo (A-3-1)
+                    </a>
+                </li>
+                 <li>
+                    <a href="defect_repair_list.html">
+                        East Lake Condo (B-11-1)
+                    </a>
+                </li>-->
+
+            </ul>
+
+    </div>
+
+
+    <div id="viewDefect" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <a id="A2" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext ui-btn-b ui-btn-inline" data-direction="reverse"  data-rel="back">Power Icon</a>
+            <h1 id="viewDefectRepair_Headers">Flooring Repair<br />1/7/2014</h1>
+
+        </div>
+
+
+        <form>
+            <ul data-role="listview" data-inset="true">
+                <li class="ui-field-contain">
+                    <label for="lblProjectName">Project Name:</label>
+                    <label id="lblProjectName">- - -</label>
+                </li>
+               <li class="ui-field-contain">
+                    <label for="lblUnitNumber">Unit Number</label>
+                    <label id="lblUnitNumber">- - -</label>
+                </li>
+                <li class="ui-field-contain">
+                    <label for="lblDefectType">Defect Type:</label>
+                    <label id="lblDefectType">Tiles and Floor</label>
+                </li>
+                <li class="ui-field-contain">
+                    <label for="lblDescription">Description:</label>
+                    <label id="lblDescription">Water Leaking near the Foyer</label>
+                </li>
+                <li class="ui-field-contain">
+                    <label for="lblStatus">Status:</label>
+                    <label id="lblStatus">Done</label>
+                </li>
+                <li class="ui-field-contain">
+                    <label for="imgPicture">Picture:</label>
+                    <label ><img id="imgPicture" class="notificationImage" src="#"/></label>
+                </li>
+                
+            </ul>
+        </form>
+
+        <a href="#popupDialogActivate" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn">Delete</a>
+
+        <div data-role="popup" id="popupDialogActivate" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width: 400px;">
+            <div data-role="header" data-theme="a">
+                <h1>Message</h1>
+            </div>
+            <div role="main" class="ui-content center">
+                <h3 class="ui-title">Are you sure want to delete this record ?</h3>
+                <a href="#" class="ui-btn" data-rel="back">Yes</a>
+                <a href="#" class="ui-btn" data-rel="back">No</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="newDefect" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <a id="A4" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext ui-btn-b ui-btn-inline" data-direction="reverse"  data-rel="back">Power Icon</a>
+            <h1>New Defect</h1>
+
+        </div>
+
+
+        <form>
+            <ul data-role="listview" data-inset="true">
+                <li class="ui-field-contain">
+                    <label for="name2">Project Name:</label>
+                    <label id="lblNewProjectName">- - -</label>
+                </li>
+                <li class="ui-field-contain">
+                    <label for="Label1">Unit Number</label>
+                    <label id="lblNewUnitNumber">- - -</label>
+                </li>
+                <li class="ui-field-contain">
+                    <label for="Label2">Defect Type:</label>
+                    <div class="ui-field-contain">
+                        <select name="select-custom-20" id="select-custom-20" data-native-menu="true">
+                            <option value="AL">Walls and Celling</option>
+                            <option value="AK">Tilkes and Floor</option>
+                            <option value="AZ">Doors and Window</option>
+                            <option value="AR">Leekly Pipes</option>
+                            <option value="CA">Miscallaneous Fixitures</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="ui-field-contain">
+                    <label for="Label3">Description:</label>
+                    <textarea data-mini="true" cols="40" rows="8" name="textarea-4" id="txtNewDescription"></textarea>
+                </li>
+
+            </ul>
+        </form>
+
+        <a href="#" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn">Take Picture</a>
+        <a href="#" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn">Attach Picture</a>
+        <a href="#popupDialogActivate" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn">Save</a>
+
+        <div data-role="popup" id="Div1" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width: 400px;">
+            <div data-role="header" data-theme="a">
+                <h1>Message</h1>
+            </div>
+            <div role="main" class="ui-content center">
+                <h3 class="ui-title">Your defect have been submitted</h3>
+                <a href="#" class="ui-btn" data-rel="back">Ok</a>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

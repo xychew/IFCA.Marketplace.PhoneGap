@@ -1,0 +1,5 @@
+D:\development2\IFCA.NET Mobile\Dev\IFCA.Framework.Projects\Marketplace\IFCA.Marketplace.PhoneGap\bin\IFCA.Marketplace.PhoneGap.dll.config
+D:\development2\IFCA.NET Mobile\Dev\IFCA.Framework.Projects\Marketplace\IFCA.Marketplace.PhoneGap\bin\IFCA.Marketplace.PhoneGap.dll
+D:\development2\IFCA.NET Mobile\Dev\IFCA.Framework.Projects\Marketplace\IFCA.Marketplace.PhoneGap\bin\IFCA.Marketplace.PhoneGap.pdb
+D:\development2\IFCA.NET Mobile\Dev\IFCA.Framework.Projects\Marketplace\IFCA.Marketplace.PhoneGap\obj\Debug\IFCA.Marketplace.PhoneGap.dll
+D:\development2\IFCA.NET Mobile\Dev\IFCA.Framework.Projects\Marketplace\IFCA.Marketplace.PhoneGap\obj\Debug\IFCA.Marketplace.PhoneGap.pdb

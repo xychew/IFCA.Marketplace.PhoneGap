@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />.
+    <title>Personal Profile</title>
+    <script type="text/javascript" src="phonegap.js"></script>
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.4.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.4.js"></script>
+ 
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="Scripts/ifca/IFCAUIComponents.js"></script>
+    <script src="config.js"></script>
+    <script src="core/PersonalProfile.js"></script>
+    <script src="ui/PersonalProfileUI.js"></script>
+    <script src="model/User.js"></script>
+    <script src="model/Address.js"></script>
+
+    <link rel="stylesheet" href="css/marketplace.css"/>
+</head>
+<body>
+    <div id="personalProfile" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <a id="#" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-b ui-btn-inline" data-direction="reverse"  data-rel="back">Power Icon</a>
+            <h1>Personal Profile</h1>
+
+        </div>
+
+            <form id="personaleProfitListView">
+                <ul data-role="listview" data-inset="true">
+                    <li class="ui-field-contain">
+                        <label for="lblName">Name</label>
+                        <label id="lblName">- - -</label>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="lblIdentityType">Identity Type</label>
+                        <label id="lblIdentityType" >- - -</label>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="lblIdentityNo">Identity No</label>
+                        <label id="lblIdentityNo" >- - -</label>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="lblDOB">Date of Birth</label>
+                        <label id="lblDOB" >- - -</label>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="lblNationality">Nationality</label>
+                        <label id="lblNationality" >- - -</label>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="lblRace">Race</label>
+                        <label id="lblRace" >- - -</label>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="lblGender">Gender</label>
+                        <label id="lblGender" >- - -</label>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="lblBumiputeraStatus">Bumiputera Status</label>
+                        <label id="lblBumiputeraStatus" >- - -</label>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="txtAddress">Address</label>
+                        <input type="text" name="Email" id="txtAddress" value="- - -" data-clear-btn="true"/>
+                    </li>
+                     <li class="ui-field-contain">
+                        <label for="txtEmail">E-mail</label>
+                         <input type="text" name="Email" id="txtEmail" value="- - -" data-clear-btn="true"/>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="txtContactNo">Contact No.</label>
+                        <input type="text" name="ContactNo" id="txtContactNo" value="- - -" data-clear-btn="true"/>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="txtMartialStatus">Martial Status</label>
+                        <input type="text" name="MartialStatus" id="txtMartialStatus" value="- - -" data-clear-btn="true"/>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="txtPostcode">Postcode</label>
+                        <input type="text" name="Postcode" id="txtPostcode" value="- - -" data-clear-btn="true"/>
+                    </li>
+                </ul>
+            </form>
+
+            <fieldset class="ui-grid-a">
+                    <div class="ui-block-a"><a id="personal-profile-save"  href="#popupDialogActivate" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn">Save</a></div>
+                    <div class="ui-block-b"><a href="#" class="ui-btn" data-rel="back" data-transition="flow">Cancel</a></div>
+            </fieldset>
+
+<!--             <a href="#popupDialogActivate" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn">Save</a>-->
+
+            <div data-role="popup" id="popupDialogActivate" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width: 400px;">
+                <div data-role="header" data-theme="a">
+                    <h1>Message</h1>
+                </div>
+                <div role="main" class="ui-content center">
+                    <h3 class="ui-title">Your personal profile has been saved</h3>
+                    <a href="notification.html#menu" class="ui-btn" data-direction="reverse">OK</a>
+                </div>
+            </div>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿body {
+}
+
+.panel {
+    padding: 40% 0;
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+
+.left {
+    text-align: left;
+}
+
+
+.notificationDeleteIcon {
+position: absolute;
+font-size: 15px;
+right: .2em;
+margin-top: -.88em;
+}
+
+.notificationImage {
+    width: 100%;
+}
+
+h1.menuUserName.ui-title {
+font-size: 150%;
+white-space: normal;
+margin: 0;
+}
+
+li.center.ui-li-divider.ui-bar-inherit.ui-first-child, li.center.ui-li-divider.ui-bar-inherit, li.center.ui-li-divider.ui-bar-inherit.ui-last-child {
+text-align: center;
+background-color: white;
+}
+
+/* Hide the number input */
+.full-width-slider input {
+    display: none;
+}
+.full-width-slider .ui-slider-track {
+    margin-left: 15px;
+}
+
+.arrowImage {
+    padding: 0 7em;
+}
+
+/*Prevent text selection while swiping with mouse*/
+.swipe-page .ui-header, .ui-title, .control .ui-btn, .trivia-btn {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    -o-user-select: none;
+    user-select:none;
+}
+
+
+

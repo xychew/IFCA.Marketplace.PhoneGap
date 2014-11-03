@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{C7566241-5ACE-44FE-9295-5F206D3E9565}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app.css" />
+    <TypeScriptCompile Include="config.ts" />
+    <TypeScriptCompile Include="core\PersonalProfile.ts" />
+    <TypeScriptCompile Include="core\DefectsRepair.ts" />
+    <TypeScriptCompile Include="core\Notification.ts" />
+    <Content Include="core\AboutUs.ts" />
+    <Content Include="core\Feedbacks.ts" />
+    <Content Include="core\KeyCollections.ts" />
+    <Content Include="core\Milestones.ts" />
+    <Content Include="core\MyAccount.ts" />
+    <Content Include="core\SiteProgress.ts" />
+    <Content Include="css\jquery.mobile-1.4.4.css" />
+    <Content Include="css\jquery.mobile-1.4.4.min.css" />
+    <Content Include="css\marketplace.css" />
+    <Content Include="images\image.png" />
+    <Content Include="index.html" />
+    <Content Include="about-us.html" />
+    <Content Include="defects.html" />
+    <Content Include="feedbacks.html" />
+    <Content Include="home-menu.html" />
+    <Content Include="js\jquery-1.11.1.min.js" />
+    <Content Include="js\jquery.mobile-1.4.4.js" />
+    <Content Include="js\jquery.mobile-1.4.4.min.js" />
+    <Content Include="key-collections.html" />
+    <Content Include="milestones.html" />
+    <Content Include="my-accounts.html" />
+    <Content Include="notifications.html" />
+    <Content Include="personal-profile.html" />
+    <Content Include="purchase-units.html" />
+    <Content Include="reg-login.html" />
+    <Content Include="Scripts\ifca\IFCAUIComponents.js" />
+    <Content Include="site-progress.html" />
+    <TypeScriptCompile Include="core\Test.ts" />
+    <TypeScriptCompile Include="model\Address.ts" />
+    <TypeScriptCompile Include="model\Agent.ts" />
+    <TypeScriptCompile Include="model\Area.ts" />
+    <TypeScriptCompile Include="model\City.ts" />
+    <TypeScriptCompile Include="model\Contact.ts" />
+    <TypeScriptCompile Include="model\Contractor.ts" />
+    <TypeScriptCompile Include="model\Defect.ts" />
+    <TypeScriptCompile Include="model\DefectPicture.ts" />
+    <TypeScriptCompile Include="model\DefectType.ts" />
+    <TypeScriptCompile Include="model\Developer.ts" />
+    <TypeScriptCompile Include="model\Development.ts" />
+    <TypeScriptCompile Include="model\Feedback.ts" />
+    <TypeScriptCompile Include="model\FeedbackType.ts" />
+    <TypeScriptCompile Include="model\Financial.ts" />
+    <TypeScriptCompile Include="model\FinancialPurchaseUnit.ts" />
+    <TypeScriptCompile Include="model\KeyCollection.ts" />
+    <TypeScriptCompile Include="model\Milestones.ts" />
+    <TypeScriptCompile Include="model\MilestonesType.ts" />
+    <TypeScriptCompile Include="model\NotifcationType.ts" />
+    <TypeScriptCompile Include="model\Notification.ts" />
+    <TypeScriptCompile Include="model\Promoter.ts" />
+    <TypeScriptCompile Include="model\PromoterType.ts" />
+    <TypeScriptCompile Include="model\Property.ts" />
+    <TypeScriptCompile Include="model\PropertyType.ts" />
+    <TypeScriptCompile Include="model\Purchaser.ts" />
+    <TypeScriptCompile Include="model\PurchaseUnit.ts" />
+    <TypeScriptCompile Include="model\SiteProgress.ts" />
+    <TypeScriptCompile Include="model\Solicitor.ts" />
+    <TypeScriptCompile Include="model\SolicitorPurchaseUnit.ts" />
+    <TypeScriptCompile Include="model\SourceOrigin.ts" />
+    <TypeScriptCompile Include="model\State.ts" />
+    <TypeScriptCompile Include="model\Statement.ts" />
+    <TypeScriptCompile Include="model\Tenure.ts" />
+    <TypeScriptCompile Include="model\UnitType.ts" />
+    <TypeScriptCompile Include="model\User.ts" />
+    <TypeScriptCompile Include="model\UserContact.ts" />
+    <TypeScriptCompile Include="model\UserNotificationSetting.ts" />
+    <TypeScriptCompile Include="model\UserPurchaseUnit.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquerymobile\jquerymobile.d.ts" />
+    <TypeScriptCompile Include="ui\PersonalProfileUI.ts" />
+    <TypeScriptCompile Include="ui\DefectsRepairUI.ts" />
+    <TypeScriptCompile Include="ui\NotificationUI.ts" />
+    <Content Include="ui\AboutUsUI.ts" />
+    <Content Include="ui\FeedbacksUI.ts" />
+    <Content Include="ui\KeyCollectionsUI.ts" />
+    <Content Include="ui\MilestonesUI.ts" />
+    <Content Include="ui\MyAccountUI.ts" />
+    <Content Include="ui\SiteProgressUI.ts" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="core\PurchaseUnit.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\phonegap\phonegap.d.ts" />
+    <TypeScriptCompile Include="ui\PurchaseUnitUI.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="modules\about-us\" />
+    <Folder Include="modules\defects\" />
+    <Folder Include="modules\feedbacks\" />
+    <Folder Include="modules\home-menu\" />
+    <Folder Include="modules\key-collections\" />
+    <Folder Include="modules\milestones\" />
+    <Folder Include="modules\my-accounts\" />
+    <Folder Include="modules\notifications\" />
+    <Folder Include="modules\personal-profile\" />
+    <Folder Include="modules\purchase-units\" />
+    <Folder Include="modules\reg-login\" />
+    <Folder Include="modules\site-progress\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>IFCA.Marketplace.PhoneGap</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>24138</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:24138/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
